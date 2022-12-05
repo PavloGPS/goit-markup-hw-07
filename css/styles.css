@@ -1,36 +1,6 @@
 /* перемінні палітри кольорів */
 
-/* Скидання стилів */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-img {
-  display: block;
-}
-/* застосуавння загальних стилів для сторінки    */
-body {
-  color: var(--primary-text-color);
-  background-color: var(--main-bg-color);
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
-}
-/* скидання стилів списку по замовчуванню */
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-/* скидання стилів посилань по замовчуванню */
-.link {
-  text-decoration: none;
-  color: inherit;
-}
+
 /* html{
   box-sizing: border-box;
 } */
