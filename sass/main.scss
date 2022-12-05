@@ -1,9 +1,11 @@
 // Utils styles
 // Змінні
-@import './utils/_variables.scss';
+@import './utils/variables';
 // base styles
 // Основні стилі
-@import './base/_base.scss';
+@import './base/base';
+// скидання стилів
+@import './base/reset';
 // components styles
 // компоненти
-@import './components/_components.scss';
+@import './components/components';
