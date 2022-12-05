@@ -1,11 +1,21 @@
 // Utils styles
+
 // Змінні
 @import './utils/variables';
+// приховування
+@import './utils/v-hidden';
+
 // base styles
+
 // Основні стилі
 @import './base/base';
 // скидання стилів
 @import './base/reset';
+
 // components styles
+
 // компоненти
 @import './components/components';
+@import './components/section';
+@import './components/container';
+

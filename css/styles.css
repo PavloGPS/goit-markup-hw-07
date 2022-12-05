@@ -11,11 +11,6 @@
 ::after{
   box-sizing: inherit;
 } */
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
 /* header  */
 .page-header {
   border-bottom: 1px solid var(--header-underline-color);
@@ -38,10 +33,7 @@
 .site-nav.list .item:not(:last-child) {
   margin-right: 50px;
 }
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .work {
   padding-bottom: 94px;
 }
@@ -222,20 +214,7 @@
   line-height: calc(42 / 36);
   text-align: center;
 }
-/* Приховування логічного заголовку */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
 
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 /* іконки в тумбах */
 .thumb {
   display: flex;
