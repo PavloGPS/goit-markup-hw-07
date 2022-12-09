@@ -2,8 +2,9 @@
 
 // Змінні
 @import './utils/variables';
-// приховування
-@import './utils/v-hidden';
+@import './utils/placeholders';
+@import './utils/mixins';
+
 
 // base styles
 
@@ -16,6 +17,13 @@
 
 // компоненти
 @import './components/components';
+
+
 @import './components/section';
 @import './components/container';
+@import './components/features';
+@import './components/work';
+
+
+
 
