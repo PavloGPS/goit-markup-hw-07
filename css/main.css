@@ -169,4 +169,88 @@ img {
   text-transform: uppercase;
   color: var(--light-text-color);
   text-align: center;
+}
+
+/* секція команда */
+/* фон секції */
+.teammates {
+  /* картка члена команди */
+  /* заголовок картки та її текст*/
+}
+.teammates__section {
+  background-color: var(--grey-bg-color);
+}
+.teammates__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  gap: 30px;
+}
+.teammates__card {
+  -ms-flex-preferred-size: calc(100% - 22.5px);
+      flex-basis: calc(100% - 22.5px);
+  text-align: center;
+  background-color: var(--main-bg-color);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.teammates__card-bottom {
+  padding: 30px 0;
+}
+.teammates__title {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+}
+.teammates__text {
+  margin-top: 10px;
+}
+.teammates__title, .teammates__text {
+  font-size: 16px;
+  line-height: 1.1875;
+}
+
+.social-links {
+  /* блок посиланнь на соц мережі*/
+  /* посилання в картці команди*/
+  /* іконки в картці команди*/
+}
+.social-links__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  gap: 10px;
+}
+.social-links__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--s-icons-color);
+  -webkit-transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
+}
+.social-links__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.social-links__link:hover, .social-links__link:focus {
+  background-color: var(--accent-color);
+  color: var(--light-s-icon-color);
 }/*# sourceMappingURL=main.css.map */
