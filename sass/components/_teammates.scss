@@ -1,44 +1,46 @@
 /* секція команда */
 /* фон секції */
 .teammates {
-    &__section {
+  &__section {
     background-color: var(--grey-bg-color);
   }
-    &__grid {
+  &__grid {
     display: flex;
     margin-top: 50px;
     gap: 30px;
   }
-}
   /* картка члена команди */
-  .member-card {
-    flex-basis: calc((100% - 3 * 30px) / 4);
-    /* @include flexbasis(3,30px); */
+  &__card {
+    @include flexbasis(4, 30px);
     text-align: center;
-  
+
     background-color: var(--main-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
   /* заголовок картки та її текст*/
-  .teammates__card-bottom {
+  &__card-bottom {
     padding: 30px 0;
   }
-  .teammates__text {
-    margin-top: 10px;
-  }
-  .teammates__title {
+
+  &__title {
     color: var(--secondary-text-color);
     font-weight: 500;
   }
-  .teammates__title,
-  .teammates__text {
+  &__text {
+    margin-top: 10px;
+  }
+  &__title,
+  &__text {
     font-size: 16px;
     line-height: calc(19 / 16);
   }
+}
+
+.social-links {
   /* блок посиланнь на соц мережі*/
-  .social-links.list {
+  &__grid {
     display: flex;
     justify-content: center;
     margin-top: 16px;
@@ -47,7 +49,7 @@
     gap: 10px;
   }
   /* посилання в картці команди*/
-  .team-s-link {
+  &__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,18 +57,21 @@
     height: 44px;
     border-radius: 50%;
     color: var(--s-icons-color);
-  
+
     transition: background-color 250ms var(--timing-function),
       color 250ms var(--timing-function);
   }
   /* іконки в картці команди*/
-  .team .s-icon {
+  &__icon {
     width: 20px;
     height: 20px;
     fill: currentColor;
   }
-  .social-links .link:hover,
-  .social-links .link:focus {
-    background-color: var(--accent-color);
-    color: var(--light-s-icon-color);
+  &__link {
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      color: var(--light-s-icon-color);
+    }
   }
+}
